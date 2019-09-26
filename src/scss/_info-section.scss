@@ -1,0 +1,59 @@
+#info-section {
+  float: left;
+  width: 35%;
+  padding: 56px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: $color1;
+
+  .logo {
+    width: 150px;
+    height: 130px;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    // font-weight: 700;
+    line-height: 0;
+  }
+
+  .info-box {
+    position: absolute;
+    bottom: 60px;
+
+    h4 {
+      font-size: 1.2rem;
+      color: $color3;
+      margin: 0.7rem 0;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: $color3;
+      margin: 0.2rem 0 1.6rem;
+    }
+
+    .icon-section {
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 0 10px;
+
+        &:hover {
+          color: #f8ff21;
+        }
+
+        &:first-child {
+          padding: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
