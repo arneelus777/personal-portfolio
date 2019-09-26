@@ -200,6 +200,8 @@ console.log("PARCEL IS WORKING"); // function parcelText() {
 // setTimeout(parcelText, 2000)
 
 var home = document.querySelector("#home"); // var resume = document.querySelector("#resume");
+// var btnList = [home, resume];
+// var resume = document.querySelector("#resume");
 // var body = [home, resume];
 
 var icon = document.querySelector(".menu-icon");
@@ -209,12 +211,8 @@ icon.addEventListener("click", function () {
   home.classList.toggle("menu-active");
 
   if (burger.classList.contains("fa-bars")) {
-    var count = function count() {
-      var i = 0;
-      return ++i;
-    };
-
-    console.log('burger menu ' + count());
+    var text = "burger menu";
+    console.log(text.toUpperCase());
     burger.classList.toggle("fa-times");
   }
 });
@@ -246,7 +244,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65190" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56332" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
