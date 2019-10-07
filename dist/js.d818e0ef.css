@@ -369,6 +369,8 @@ table {
         width: 500px;
         padding: 46px;
         height: calc(100% - 112px);
+        overflow-y: scroll;
+        overflow-x: hidden;
         background: #272727;
         -webkit-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
         -moz-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
@@ -407,23 +409,35 @@ table {
     #contact #content-area .contact-section {
       vertical-align: top;
       display: inline-block;
-      padding: 20% 0 0;
-      max-width: 500px; }
-      #contact #content-area .contact-section .profile h1 {
+      padding: 56px;
+      width: 70%;
+      float: right; }
+      #contact #content-area .contact-section .contact-info h1 {
         font-size: 2.3rem;
         font-weight: 500;
         line-height: 1.2;
         margin: 0 0 1rem; }
-        #contact #content-area .contact-section .profile h1 span {
+        #contact #content-area .contact-section .contact-info h1 span {
           color: #4b21ff; }
-      #contact #content-area .contact-section .profile h5 {
-        font-size: 1.1rem;
-        margin: 0 0 2rem; }
-      #contact #content-area .contact-section .profile p {
-        color: #a9a9a9;
-        font-weight: 300;
-        line-height: 1.4;
-        margin: 0 0 2rem; }
+      #contact #content-area .contact-section .contact-info .contact-box {
+        width: 100%;
+        padding: 30px;
+        max-width: 600px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out; }
+        #contact #content-area .contact-section .contact-info .contact-box:hover {
+          -webkit-box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+          -moz-box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12); }
+        #contact #content-area .contact-section .contact-info .contact-box h5 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin: 0 0 1.5rem; }
+        #contact #content-area .contact-section .contact-info .contact-box p {
+          color: #a9a9a9;
+          font-weight: 300;
+          line-height: 1.4;
+          margin: 0 0 2rem; }
 
 * {
   margin: 0;
